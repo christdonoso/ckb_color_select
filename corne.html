@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row mt-5">
+          <div>
+            <input id="check"  type="checkbox" onclick="keymap()" checked> KEYMAP
+          </div>
+            <div class="col-6">
+              <div class="row">
+                
+                <div class= "col-2">  
+                  <div class="key" id="box1" onclick="changeColor('box1')">
+                    TAB
+                  </div>
+                  <div class="key" id="box2" onclick="changeColor('box2')">
+                    SHFT
+                  </div>
+                  <div class="key" id="box3" onclick="changeColor('box3')">
+                    CRTL
+                  </div>
+                </div>
+                
+                <div class= "col-2">  
+                  <div class="key" id="box4" onclick="changeColor('box4')">
+                    Q
+                  </div>
+                  <div class="key" id="box5" onclick="changeColor('box5')">
+                    A
+                  </div>
+                  <div class="key" id="box6" onclick="changeColor('box6')">
+                    Z
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-6">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="teclado">
+      <div class="tecla">A</div>
+      <div class="tecla">B</div>
+      <div class="tecla">C</div>
+      <div class="tecla">D</div>
+      <div class="tecla">E</div>
+      <div class="tecla">F</div>
+      <div class="tecla">G</div>
+      <div class="tecla">H</div>
+      <div class="tecla">I</div>
+      <div class="tecla">J</div>
+      <div class="tecla">K</div>
+      <div class="tecla">L</div>
+  </div>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
