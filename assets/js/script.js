@@ -22,7 +22,7 @@ function changeColor(id) {
 
 
 function keymap(){
-    let check = document.getElementById('check')
+    let check = document.getElementById('checkKeymap')
     if (check.checked == false){
         for (var i = 0; i < keys.length; i++){
             keys[i].innerText = ''
@@ -31,6 +31,26 @@ function keymap(){
     else{
         for (var i = 0; i < keys.length; i++){
             keys[i].innerText = elementosDentro[i]
+        }
+    }
+}
+
+function allBlack(){
+    let check = document.getElementById('checkBlack') 
+    if (check.checked == true){
+        keys = document.getElementsByClassName('key')
+        for (var i = 0; i < keys.length; i++){
+            keys[i].style.backgroundColor = 'black'
+            keys[i].style.color = 'white'
+
+        }
+    }
+    else{
+        keys = document.getElementsByClassName('key')
+        for (var i = 0; i < keys.length; i++){
+            keys[i].style.backgroundColor = 'white'
+            keys[i].style.color = 'black'
+
         }
     }
 }

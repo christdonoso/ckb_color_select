@@ -5,66 +5,201 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container">
-        <div class="row mt-5">
-          <div>
-            <input id="check"  type="checkbox" onclick="keymap()" checked> KEYMAP
-          </div>
-            <div class="col-6">
-              <div class="row">
-                
-                <div class= "col-2">  
-                  <div class="key" id="box1" onclick="changeColor('box1')">
-                    TAB
-                  </div>
-                  <div class="key" id="box2" onclick="changeColor('box2')">
-                    SHFT
-                  </div>
-                  <div class="key" id="box3" onclick="changeColor('box3')">
-                    CRTL
-                  </div>
-                </div>
-                
-                <div class= "col-2">  
-                  <div class="key" id="box4" onclick="changeColor('box4')">
-                    Q
-                  </div>
-                  <div class="key" id="box5" onclick="changeColor('box5')">
-                    A
-                  </div>
-                  <div class="key" id="box6" onclick="changeColor('box6')">
-                    Z
-                  </div>
-                </div>
+    <div class="container-fluid">
+
+      <div class="py-5">
+        <input id="checkKeymap"  type="checkbox" onclick="keymap()" checked> KEYMAP
+        <input id="checkBlack"  type="checkbox" onclick="allBlack()"> ALL BLACK
+
+      </div>
+
+      <div class="row">
+        <div class="col-6 d-flex justify-content-end">
+
+           <div class="container-key">
+              <div class="row-key mt-4 ">
+                <div class="key" id="keytab" onclick="changeColor('keytab')">
+                Tab
               </div>
+              <div class="key" id="keyshft" onclick="changeColor('keyshft')">
+                Shft
+              </div><div class="key" id="keycrtl" onclick="changeColor('keycrtl')">
+                Ctrl
+              </div>
+          </div> 
 
+          <div class="row-key mt-4">
+            <div class="key" id="keyq" onclick="changeColor('keyq')">
+              Q
             </div>
-            <div class="col-6">
-                
+            <div class="key" id="keya" onclick="changeColor('keya')">
+              A
             </div>
+            <div class="key" id="keyz" onclick="changeColor('keyz')">
+              Z
+            </div>
+          </div> 
+        
+          <div class="row-key mt-2">
+            <div class="key" id="keyw" onclick="changeColor('keyw')">
+              W
+            </div>
+            <div class="key" id="keys" onclick="changeColor('keys')">
+              S
+            </div>
+            <div class="key" id="keyx" onclick="changeColor('keyx')">
+              X
+            </div>
+          </div> 
+          
+          <div class="row-key mt-1">
+            <div class="key" id="keye" onclick="changeColor('keye')">
+            E
+            </div>
+            <div class="key" id="keyd" onclick="changeColor('keyd')">
+              D
+            </div>
+            <div class="key" id="keyc" onclick="changeColor('keyc')">
+              C
+            </div>
+          </div> 
+          
+          <div class="row-key mt-2">
+            <div class="key" id="keyr" onclick="changeColor('keyr')">
+              R
+            </div>
+            <div class="key" id="keyf" onclick="changeColor('keyf')">
+              F
+            </div>
+            <div class="key" id="kev" onclick="changeColor('keyv')">
+              V
+            </div>
+          </div> 
+          
+          <div class="row-key mt-3">
+            <div class="key" id="keyt" onclick="changeColor('keyt')">
+              T
+            </div>
+            <div class="key" id="keyg" onclick="changeColor('keyg')">
+              G
+            </div>
+            <div class="key" id="keyb" onclick="changeColor('keyb')">
+              B
+            </div>
+          </div> 
+          </div>
+
+
+      </div>
+
+      <div class="col-6">
+        <div class="container-key">
+          <div class="row-key mt-3">
+            <div class="key" id="keyy" onclick="changeColor('keyy')">
+            Y
+          </div>
+          <div class="key" id="keyh" onclick="changeColor('keyh')">
+            H
+          </div><div class="key" id="keyn" onclick="changeColor('keyn')">
+            N
+          </div>
+      </div> 
+
+      <div class="row-key mt-2">
+        <div class="key" id="keyu" onclick="changeColor('keyu')">
+          U
         </div>
-    </div>
+        <div class="key" id="keyj" onclick="changeColor('keyj')">
+          J
+        </div>
+        <div class="key" id="keym" onclick="changeColor('keym')">
+          M
+        </div>
+      </div> 
+    
+      <div class="row-key mt-1">
+        <div class="key" id="keyi" onclick="changeColor('keyi')">
+          I
+        </div>
+        <div class="key" id="keyk" onclick="changeColor('keyk')">
+          K
+        </div>
+        <div class="key" id="key," onclick="changeColor('key,')">
+          ,
+        </div>
+      </div> 
+      
+      <div class="row-key mt-2">
+        <div class="key" id="keyo" onclick="changeColor('keyo')">
+          O
+        </div>
+        <div class="key" id="keyl" onclick="changeColor('keyl')">
+          L
+        </div>
+        <div class="key" id="key." onclick="changeColor('key.')">
+          .
+        </div>
+      </div> 
+      
+      <div class="row-key mt-4">
+        <div class="key" id="keyp" onclick="changeColor('keyp')">
+          P
+        </div>
+        <div class="key" id="keyñ" onclick="changeColor('keyñ')">
+          Ñ
+        </div>
+        <div class="key" id="key-" onclick="changeColor('key-')">
+          -
+        </div>
+      </div> 
+      
+      <div class="row-key mt-4">
+        <div class="key" id="keybksp" onclick="changeColor('keybksp')">
+          bksp
+        </div>
+        <div class="key" id="keywierd" onclick="changeColor('keywierd')">
+          '
+        </div>
+        <div class="key" id="keyshft2" onclick="changeColor('keyshft2')">
+          Shft
+        </div>
+      </div> 
+      </div>
 
-    <div class="teclado">
-      <div class="tecla">A</div>
-      <div class="tecla">B</div>
-      <div class="tecla">C</div>
-      <div class="tecla">D</div>
-      <div class="tecla">E</div>
-      <div class="tecla">F</div>
-      <div class="tecla">G</div>
-      <div class="tecla">H</div>
-      <div class="tecla">I</div>
-      <div class="tecla">J</div>
-      <div class="tecla">K</div>
-      <div class="tecla">L</div>
+      </div>
+
+      <div class="col-6 botton-layer d-flex justify-content-end pe-4">
+        <div class="key" id="keyhome" onclick="changeColor('keyhome')">
+          Home
+        </div>
+        <div class="key" id="keymod1" onclick="changeColor('keymod1')">
+          Mod1
+        </div>
+        <div class="key ms-4" id="keyspace1" onclick="changeColor('keyspace1')">
+          Space
+        </div>
+      </div>
+
+      <div class="col-6 botton-layer ps-4">
+        <div class="key me-4" id="keyspace2" onclick="changeColor('keyspace2')">
+          Space
+        </div>
+        <div class="key" id="keymod2" onclick="changeColor('keymod2')">
+          Mod2
+        </div>
+        <div class="key" id="keyalt" onclick="changeColor('keyalt')">
+          Alt
+        </div>
+      </div>
+
+    </div>
   </div>
-    <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
